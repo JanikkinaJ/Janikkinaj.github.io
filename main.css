@@ -1,14 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
+.item1 {
+  grid-area: myArea;
 }
-.flex-container > div {
-  margin: 20px;
-  padding: 20px;
+.header { grid-area: header;}
+.lspace { grid-area: lspace; }
+.main { grid-area: main;
+}
+.rspace {grid-area: rspace; }
+.footer {grid-area: footer;}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+  'header header header header header'
+  'lspace lspace  main rspace rspace'
+  'lspace lspace  main rspace rspace'
+  'lspace lspace  main rspace rspace'
+  'lspace lspace  footer rspace rspace';
+  padding: 10px;
+  gap: 10px;
+}
+.grid-container > div {
+  padding 20px 0;
+  text align: center;
 }
 
 body {
@@ -18,27 +34,22 @@ body {
 } 
 h1 {
   font-size: 30px;
-  text-decoration: underline #ffd600 2px;
+  text-decoration: underline #ffbd00 2px;
   text-align: center;
 }
 h2 {
   font-size: 20;
 }
 code {
-  color: #ffd600; 
+  color: #ffbd00; 
   background-color: #2c2d2d;
 }
 
 a:link, a:visited {
-  background-color: #2c2d2d;
-  color: #ffd600;
-  padding: 14px 25px;
-  text-align: center;
+  color: #ffbd00;
   text-decoration: none;
-  display: inline-block;
 }
 
 a:hover, a:active {
-  background-color: #444545;
-  text-align: center;
+  color: #f0c800;
 }
