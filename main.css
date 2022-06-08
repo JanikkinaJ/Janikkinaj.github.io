@@ -6,10 +6,12 @@
 .header { grid-area: header;}
 .lspace { grid-area: lspace; }
 .leftmain { grid-area: leftmain;
-  background-color: #000000; 
+  background-color: #070807; 
+  border-radius: 25px;
   padding: 20px;}
 .rightmain {grid-area: rightmain;
-  background-color: #000000; 
+  background-color: #070807; 
+  border-radius: 25px;
   padding: 20px;}
 .rspace {grid-area: rspace; }
 .footer {grid-area: footer;}
