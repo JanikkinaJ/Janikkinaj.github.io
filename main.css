@@ -14,7 +14,11 @@
   border-radius: 25px;
   padding: 20px;}
 .rspace {grid-area: rspace; }
-.footer {grid-area: footer;}
+.footer {grid-area: footer;
+  background-color: #070807; 
+  border-radius: 25px;
+  padding: 20px;}
+
 
 .grid-container {
   display: grid;
