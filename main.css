@@ -5,8 +5,12 @@
 }
 .header { grid-area: header;}
 .lspace { grid-area: lspace; }
-.main { grid-area: main;
-}
+.leftmain { grid-area: leftmain;
+  background-color: #000000; 
+  padding: 20px;}
+.rightmain {grid-area: rightmain;
+  background-color: #000000; 
+  padding: 20px;}
 .rspace {grid-area: rspace; }
 .footer {grid-area: footer;}
 
@@ -14,16 +18,16 @@
   display: grid;
   justify-content: center;
   grid-template-areas:
-  'header header header header header'
-  'lspace lspace  main rspace rspace'
-  'lspace lspace  main rspace rspace'
-  'lspace lspace  main rspace rspace'
-  'lspace lspace  footer rspace rspace';
+  'header header header header header header'
+  'lspace lspace  leftmain rightmain rspace rspace'
+  'lspace lspace  leftmain rightmain rspace rspace'
+  'lspace lspace  leftmain rightmain rspace rspace'
+  'lspace lspace  footer footer rspace rspace';
   padding: 10px;
   gap: 10px;
 }
 .grid-container > div {
-  padding 20px 0;
+  padding 20px;
   text align: center;
 }
 
